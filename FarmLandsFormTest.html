@@ -10,7 +10,21 @@
         <script src="https://placemakersdev--dev.sandbox.my.site.com/bgweb"></script>
         <script>
             $Lightning.use(
-                'c:buyingGroupsWebFormWrapper',
+                'c:BuyingGroupWebFormApp',
+                function() {
+                    $Lightning.createComponent(
+                        'lwc:buyingGroupsWebFormWrapper',
+                        {
+                            "Var1": 'Farmlands',
+                            "Var2": '',
+                            "Var3": '',
+                            "Var4": ''
+                        },
+                        'farmlandsform',
+                        function(cmp) {
+                        }
+                    );
+                },
                 'https://placemakersdev--dev.sandbox.my.site.com/bgweb'
             );
         </script>
