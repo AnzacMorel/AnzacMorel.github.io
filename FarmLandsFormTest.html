@@ -12,6 +12,9 @@
                 'c:BuyingGroupsWebFormApp',
                 function() {
                     $Lightning.createComponent(
+                        'c:buyingGroupsWebFormButton'
+                    )
+                    $Lightning.createComponent(
                         'c:buyingGroupsWebFormWrapper',
                         {
                             "Var1": 'Farmlands',
@@ -23,9 +26,6 @@
                         function(cmp) {
                         }
                     );
-                    $Lightning.createComponent(
-                        'c:buyingGroupsWebFormButton'
-                    )
                 },
                 'https://placemakersdev--dev.sandbox.my.site.com/bgweb'
             );
