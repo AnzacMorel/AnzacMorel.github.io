@@ -8,17 +8,9 @@
         <div id="farmlandsform"></div>
         <script src="https://placemakersdev--dev.sandbox.my.site.com/bgweb"></script>
         <script>
-            $Lightning.createComponent(
+            $Lightning.use(
                 'c:buyingGroupsWebFormWrapper',
-                {
-                    "Var1": 'Farmlands',
-                    "Var2": '',
-                    "Var3": '',
-                    "Var4": ''
-                },
-                'farmlandsform',
-                function (cmp) {
-                }
+                'https://placemakersdev--dev.sandbox.my.site.com/bgweb'
             );
         </script>
     </body>
