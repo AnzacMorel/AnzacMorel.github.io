@@ -2,11 +2,14 @@
 <html lang="en"> 
     <head>
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=250px, initial-scale=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
     </head>
     <body>
+        <i-frame></i-frame>
         <script>
+            console.log('!@#$');
             window.addEventListener("flowFinished", function(event) {
+                console.log('!@#$ Listener');
                 if (event.detail === "Flow execution finished, perform redirect") {
                     window.location.href = 'https://www.placemakers.co.nz/online/group-portal-application';
                 }
