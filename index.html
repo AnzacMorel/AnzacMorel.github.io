@@ -5,6 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
     </head>
     <body>
+        <script>
+            window.addEventListener("flowFinished", function(event) {
+                if (event.detail === "Flow execution finished, perform redirect") {
+                    window.location.href = 'https://www.placemakers.co.nz/online/group-portal-application';
+                }
+            }, false);
+        </script>
         <div id="farmlandsform"></div>
         <script src="https://placemakersdev--dev.sandbox.my.site.com/bgweb/lightning/lightning.out.js"></script>
         <script>
