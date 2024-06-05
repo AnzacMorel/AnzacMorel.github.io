@@ -9,7 +9,7 @@
             console.log('!@#$');
             document.addEventListener('DOMContentLoaded', (event) => {
 
-                document.addEventListener("flowFinished", function(event) {
+                window.addEventListener("flowFinished", function(event) {
                     console.log('!@#$ Listener');
                     if (event.detail === "Flow execution finished, perform redirect") {
                         window.location.href = 'https://www.placemakers.co.nz/online/group-portal-application';
